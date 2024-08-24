@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f0f2f5;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #830078 !important;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #830078;
+}
+
+/* Hero Section */
+.hero {
+  background: url("img/Background.jpeg") no-repeat center center/cover;
+  color: #ffffff;
+  padding: 100px 15px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  padding: 10px 30px;
+  font-size: 1.25rem;
+}
+
+/* Services Section */
+.services img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.services h5 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-img-top {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .card-body {
+    flex: 1;
+  }
+}
+
+.service.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+.footer {
+  padding: 50px 0;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #c508bc;
+}
+
+.footer .logo {
+  height: 50px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .row.flex-column .col-md-6 {
+    max-width: 100%;
+  }
+}
+
+/* Halaman Aplikasi */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.header img {
+  max-width: 200px;
+}
+
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-container input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+  max-width: 60px;
+  margin-bottom: 15px;
+}
+
+.grid-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
